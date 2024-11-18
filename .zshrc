@@ -1,4 +1,4 @@
-ZSH=/usr/share/oh-my-zsh/
+ZSH=~/.oh-my-zsh/
 ZSH_THEME="dst"
 
 #  plugins
@@ -22,33 +22,13 @@ export FZF_PREVIEW_OPTS="--border --color=bg+:48,bg:-1,hl:3,fg:7"
 #  neofetch
 neofetch
 #  proxy
-#export http_proxy=127.0.0.1:7890
-#export https_proxy=127.0.0.1:7890
+# export http_proxy=127.0.0.1:7890
+# export https_proxy=127.0.0.1:7890
 
 
 #  alias
-alias vim="nvim"
 alias fzf="fzf --preview 'bat --color=always {}'"
 alias top="btop"
 
-# thefuck
-eval $(thefuck --alias)
-
-
-#  conda
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
