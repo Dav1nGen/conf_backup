@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Catppuccin-Mocha",
     "window.menuBarVisibility": "toggle",
     "editor.fontSize": 20,
     "editor.scrollbar.verticalScrollbarSize": 15,
@@ -40,5 +39,60 @@
     "explorer.confirmDragAndDrop": false,
     "editor.fontLigatures": true,
     "editor.fontVariations": true,
-    "cmake.showConfigureWithDebuggerNotification": false
+    "cmake.showConfigureWithDebuggerNotification": false,
+    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+    "markdown-preview-enhanced.codeBlockTheme": "atom-dark.css",
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "markdown-pdf.breaks": true,
+    "markdown-pdf.displayHeaderFooter": false,
+    "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+    "markdown-preview-enhanced.enableHTML5Embed": true,
+    "markdown-preview-enhanced.enablePreviewZenMode": true,
+    "markdown-preview-enhanced.enableScriptExecution": true,
+    "markdown-preview-enhanced.enableTypographer": true,
+    "markdown-preview-enhanced.HTML5EmbedIsAllowedHttp": true,
+    "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": true,
+    "Codegeex.License": "",
+    "Codegeex.CompletionDelay": 2,
+    "git.confirmSync": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.formatOnSave": true
+    },
+    "clangFormat.style": "LLVM",
+    "lldb.consoleMode": "split",
+    "xmake.runMode": "buildRun",
+    "clangd.checkUpdates": true,
+    "clangd.path": "/home/dav1ngen/.config/Code/User/globalStorage/kylinideteam.kylin-clangd/install/19.1.2/clangd_19.1.2/bin/clangd",
+    "codegeex.codeLens.enableCodeLens": "disable",
+    "cpplint.excludes": [],
+    "editor.tabSize": 2,
+    "Codegeex.Chat.fontSize": 19,
+    "cpplint.cpplintPath": "/usr/bin/cpplint",
+    "lldb.suppressUpdateNotifications": true,
+    "editor.mouseWheelZoom": true,
+    "python.createEnvironment.trigger": "off",
+    "git.autofetch": true,
+    "[cmake]": {
+        "editor.defaultFormatter": "cheshirekow.cmake-format"
+    },
+    "clang-format.executable": "/usr/bin/clang-format-14",
+    "terminal.integrated.stickyScroll.enabled": false,
+    "explorer.confirmPasteNative": false,
+    "geminicodeassist.project": "atomic-passage-pf3dl",
+    "vcpkg.general.vcpkgPath": "/usr/local/share/vcpkg",
+    "cmake.generator": "Unix Makefiles",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureArgs": [
+        "-DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+    ],
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+
+     "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--background-index",
+        "--header-insertion=never"
+    ],
+    "cmake.buildBeforeRun": true
 }
